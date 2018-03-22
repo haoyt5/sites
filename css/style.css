@@ -1,0 +1,230 @@
+
+/*Global*/
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+body{
+	font-family: NanumGothic;
+
+}
+.wrapper{
+	overflow: hidden;
+}
+
+/*$Background
+-----------------------*/
+.main-bg{
+	background: linear-gradient(50deg, #F0F0F0 5, #FFFFFF 30%);
+	position: fixed;
+	top: 0;
+	left:0;
+	width:100%;
+	height: 100%;
+}
+/*btn
+-----------------------*/
+/*icon btn*/
+.icon-btn{
+	display:inline-block;
+	height:32px;
+	line-height:32px;
+	font-size:24px;
+	
+}
+.icon-btn .icon{
+	display: block;
+	text-align:center;
+}
+
+
+/*Element Placeholder*/
+.elements{
+	border:0px solid #979797;
+	border-radius:10px;
+	font-size: 8px;
+	padding: 10px;
+}
+
+.elements2{
+	background-color: #D8D8D8;
+	border:1px solid #979797;
+	border-radius:10px;
+	color: #fff;
+	font-size: 8px;
+	padding: 10px;
+}
+/*$Header
+----------------------*/
+.header{
+	position: fixed;
+	top:0;
+	left: :0;
+	width:100%;
+	height:80px;
+	z-index:100;	
+	background-color: #2BAAD0;
+}
+/* navbar
+-----------------------*/
+.navbar{
+	background-color: #2BAAD0;
+	position: fixed;
+	top:0;
+	width:0;
+	width:100%;
+	height:80px;
+	z-index:50;
+}
+.navh{
+/*  border: 1px solid #000;*/
+  height: 80px
+  width:100px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffff;
+  font-family: 'NanumGothic','Helvetica', 'roboto', arial, sans-serif;
+  display: inline-block;
+  padding: 24px;
+}
+.imgBox-fit{
+	display:inline-block;
+	height:32px;
+}
+.imgBox-fit .image{
+	height: 100%
+}
+.navbar__social-bar{
+	padding:24px;
+/*	border:1px solid#000;*/
+	float:left;
+}
+.navbar__social-bar .icon-btn{
+	color:#ffff;
+}
+.navbar__nav{
+	position: :fixed;
+	right:0;
+	float:right;
+}
+.navbar .elements{
+	height: 50px;
+}
+
+
+.imgbox{
+	border:1px solid #000;
+	overflow: hidden;
+}
+
+
+/*框線設定*/
+.row{
+	margin-left:-15px;
+	margin-right:-15px;
+	padding: 20px;
+}
+/*欄位的外框清除浮動*/
+.row:after{
+	content:"";
+	display: block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+}
+/*container中的欄位劃分*/
+.col-1-4, .col-1-3{
+	float:left;
+    height: 550px;
+    border: 1px solid #9013FE;
+    padding: 0 15px;
+}
+.col-1-4{
+	width:33.3333%;
+}
+.col-1-3{
+	width: 66.666%
+}
+
+
+
+
+
+
+/*共用的內距*/
+.givePadding{
+	padding-top: 320px;
+	padding-bottom: 320px;
+}
+
+/*$introduction*/
+.imgboxfit2{
+	height: 205px;
+}
+.imgboxfit2 .profile{
+	height: 100%;
+	display:block;
+}
+
+
+.introduction {
+	height: 100%;
+}
+/*introduction right statement-h1*/
+.intrduction .statmet{
+	float:left;
+	width:50%;
+}
+.introduction .statement .statement-h1{
+	float: left;
+	width:100%;
+}
+/*introduction-icon-btn2*/
+.icon-btn2{
+	color:#000;
+	font-size:24px; 
+}
+
+/*footer的設定*/
+.footer{
+	width: 100%;
+	padding-top:80px
+	padding-bottom :50px;
+	background-color: #F0F0F0;
+}
+.h7{
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'NanumGothic','Helvetica', 'roboto', arial, sans-serif;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+}
+/*欄位變化*/
+@media (max-width:1200px){
+
+}
+@media (max-width:1024px){
+	
+}	
+@media (max-width:992px){
+}
+
+@media (max-width:768px){
+	
+}
+@media (max-width:480px){
+	.col-1-4{
+		width:100%
+	}
+}
+@media (max-width:375px){
+	
+}
+@media (max-width:320px){
+	
+}
