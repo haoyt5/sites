@@ -71,21 +71,20 @@ body{
 	background-color: #2BAAD0;
 	position: fixed;
 	top:0;
-	width:0;
 	width:100%;
 	height:80px;
 	z-index:50;
 }
 .navh{
-/*  border: 1px solid #000;*/
-  height: 80px
+  border: 1px solid #000;
+  position:fixed;
   width:100px;
   font-size: 18px;
   font-weight: 400;
   color: #ffff;
   font-family: 'NanumGothic','Helvetica', 'roboto', arial, sans-serif;
   display: inline-block;
-  padding: 24px;
+  z-index:50;
 }
 .imgBox-fit{
 	display:inline-block;
@@ -103,12 +102,9 @@ body{
 	color:#ffff;
 }
 .navbar__nav{
-	position: :fixed;
-	right:0;
-	float:right;
-}
-.navbar .elements{
-	height: 50px;
+	padding: 31px;
+	float: right;
+	display: inline-block;
 }
 
 
@@ -116,6 +112,7 @@ body{
 	border:1px solid #000;
 	overflow: hidden;
 }
+
 
 
 /*框線設定*/
@@ -153,13 +150,17 @@ body{
 
 /*共用的內距*/
 .givePadding{
-	padding-top: 320px;
-	padding-bottom: 320px;
+	padding-top: 135px;
+	padding-bottom: 150px;
 }
 
 /*$introduction*/
+/*introductionprofile*/
 .imgboxfit2{
 	height: 205px;
+	left:33.33%;
+	right: 33.33%;
+	padding-top:6vh; 
 }
 .imgboxfit2 .profile{
 	height: 100%;
@@ -167,11 +168,12 @@ body{
 }
 
 
+
 .introduction {
 	height: 100%;
 }
 /*introduction right statement-h1*/
-.intrduction .statmet{
+.intrduction .statemet{
 	float:left;
 	width:50%;
 }
@@ -179,6 +181,31 @@ body{
 	float: left;
 	width:100%;
 }
+
+/*linkanimation*
+---------------------------*/
+.click1:hover{
+	color: #43D4FF;
+}
+.click1:active{
+	color: #00C5FF;
+}
+.click1:before{
+	content:"";
+	width: 0%;
+	height: 2px;
+	background-color: #43D4FF;
+	display: inline-block;
+	position: absolute;
+	bottom:0;
+	left:0;
+	transition: width 0.3s;
+}
+.click1:hover:before{
+	width:100%;
+}
+
+
 /*introduction-icon-btn2*/
 .icon-btn2{
 	color:#000;
