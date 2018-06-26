@@ -9,6 +9,7 @@
  	Image
  * Header
  	Location searching bar
+ * Server Alarm
  * Sun
  * weather
  * com-Map
@@ -72,6 +73,16 @@
 	display:block;
 	text-align:center;
 }
+/*alarm-btn*/
+.icon-btn-alarm{
+	font-size: 20px;
+	color: #D65A75;
+}
+.icon-btn-alarm:hover{
+	font-size: 20px;
+	color: #fefefe;
+}
+
 /*location button*/
 .outter2{
 	text-align: center;
@@ -203,6 +214,7 @@
 	float: left;
 	transition: all 0.3s;
 }
+
 .popup-menu__close:hover{
 	transform: rotate(180deg);
 }
@@ -227,6 +239,53 @@
 	height:80px;
 
 }
+/*  $Alert
+---------------------------*/
+.popup-alert{
+	background-color: #fefefe;
+	border:solid 2px #D65A75;
+	width:245px;
+	height:245px;
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top:30%;
+	z-index: 90;
+}
+#popup-overlay-alert:target{
+	opacity: 1;
+	visibility: visible;
+}
+.popup-alert__close{
+	margin-right: 20px;
+	width: 12px;
+	height: 12px;
+	color:#D65A75;
+	font-size: 20px; 
+	float:right; 
+	display: block;
+	z-index: 95;
+
+}
+/*Alert sign*/
+.alert-sign{
+	color: #D65A75;
+	padding-top: 13%;
+	margin: 0 auto;
+	text-align: center;
+	font-size:50px;
+	line-height: 30px;
+}
+.alert-sign__icon{
+	font-size:90px;
+}
+.alert-color{
+	color: #D65A75;
+}
+
+
 
 /*popup-menu__item*/
 .popup-menu__item{
@@ -302,6 +361,7 @@
 	padding: 24px;
 }
 
+
 /*  $Mainweather
 ---------------------------*/
 .weather{
@@ -314,6 +374,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
 .box1{
 	margin:0 auto;
 	text-align: center;
@@ -326,6 +387,7 @@
 	
 }
 .local-information__lines{
+	display: flex;
 	margin:0px 6px;
 	text-align: left;
 	transform: translateY(-120%);	

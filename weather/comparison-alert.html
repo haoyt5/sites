@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>comparison</title>
+	<title>comparison-alert</title>
 	<link rel="stylesheet" type="text/css" href=" bootstrap/bootstrapbase.css" />
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -154,6 +154,19 @@
 			</div>
 		</header>
 		 <!-- End Header -->
+		 <!-- Start alert -->
+		 <div id="popup-overlay-alert" class="popup-alert u-clearfix">
+		 	<a href="#" class="popup-alert__close">
+		 		<i class="icon-window-close-o"></i>
+		 	</a>
+			<div class="alert-sign">
+				<div class="alert-sign__icon">
+		 		<i class="icon-cloud-flash"></i>
+		 		</div>
+		 		<h2>Tunderstorm over Berekeley from 10:00</h2>
+		 	</div>
+		 </div>
+		 <!-- End alert -->
 		 <!-- Stadt weather -->
 		<div class="map">
 			<div class="container">
@@ -170,7 +183,9 @@
 			<div class="container">
 				<div class="row transform__lines">
 					<div class="col-xs-6">
-						<h1 class="local-information__lines">Berkeley</h1>
+						<h1 class="local-information__lines">Berkeley <a href="#popup-overlay-alert" class="icon-btn-alarm"><i class=" icon-attention"></i></a> 
+
+						</h1>
 					</div>
 					<div class="col-xs-4 col-xs-push-1">
 						<h1 class="local-information__lines">14℃</h1>
@@ -246,7 +261,7 @@
 							<div class="rank-card__inner">
 								<div class="row">
 									<div class="col-xs-8">
-									<h4 class="rank-card__title located">Berkeley</h4>
+									<h4 class="rank-card__title located">Berkeley <a href="#popup-overlay-alert" class="icon-btn-alarm"><i class=" icon-attention"></i></a> </h4>
 									<p class="rank-card__distance">0.0 mile</p>
 									</div>
 									<div class="col-xs-2 col-xs-pull-1">
