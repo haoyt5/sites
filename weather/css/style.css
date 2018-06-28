@@ -244,8 +244,8 @@
 .popup-alert{
 	background-color: #fefefe;
 	border:solid 2px #D65A75;
-	width:245px;
-	height:245px;
+	width:250px;
+	height:250px;
 	visibility: hidden;
 	opacity: 0;
 	position: fixed;
@@ -311,6 +311,10 @@
 }
 .popup-menu__item2:hover{
 	color:#FADA47;
+}
+.icon-plus_nav{
+	display: block;
+	padding-top: 3px;
 }
 .icon-plus_nav:hover{
 	color: #FCE991;
