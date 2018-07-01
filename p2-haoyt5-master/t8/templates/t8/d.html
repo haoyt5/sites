@@ -1,0 +1,70 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+		<title>Task 8h</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static '/vendors/bootstrap/css/bootstrap.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}" />
+
+		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+
+		<link rel="stylesheet" href="../../../static/vendors/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../../../static/css/main.css">
+		<script src="../../../static/vendors/jquery/jquery-3.3.1.min.js"></script>
+		<script src="../../../static/vendors/jquery-ui/jquery-ui.min.js"></script>
+		
+	<style type="text/css">
+		.bg-purple{
+		  height: 100%;
+		  width: 100%;
+		  background-color: #96339C;
+		}
+		.bg-orange{
+		   background-color:#F67A00;
+		}
+
+		.wrapper{
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+			align-content: flex-start;
+			grid-template-columns: repeat(5, 1.25fr);
+			grid-gap: 30px;
+			padding-bottom:40px;
+			padding-top: 40px;
+			padding-left: 30px;
+			padding-right: 30px;
+			grid-template-rows: repeat(3, 0.75fr);
+		}
+		.square{
+			height: 160px;
+			width:180px;
+			margin: 20px
+		}
+
+
+
+
+	</style>
+
+
+	</head>
+	<body>
+		<!-- Your layout here -->
+
+		<div id="main" class="wrapper bg-purple">
+			  <div class="bg-orange square sq-1"></div>
+			  <div class="bg-orange square sq-2"></div>
+			  <div class="bg-orange square sq-3"></div>
+			  <div class="bg-orange square sq-4"></div>
+			  <div class="bg-orange square sq-5"></div>
+			  <div class="bg-orange square sq-6"></div>
+			  <div class="bg-orange square sq-7"></div>
+			  <div class="bg-orange square sq-6"></div>
+			  <div class="bg-orange square sq-7"></div>
+		</div>
+	</body>
+</html>
