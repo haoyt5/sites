@@ -3,18 +3,18 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 't2/index.html')
+  
+def one(request):
+    return render(request, 't2/1.html')
 
-def first(request):
-    return render(request, 'static/t2/1.png')
+def two(request):
+    return render(request, 't2/2.html')
 
-def second(request):
-    return render(request, 'static/t2/2.png')
+def three(request):
+    return render(request, 't2/3.html')
 
-def third(request):
-    return render(request, 'static/t2/3.png')
+def four(request):
+    return render(request, 't2/4.html')
 
-def fourth(request):
-    return render(request, 'static/t2/4.png')
-
-def fifth(request):
-    return render(request, 'static/t2/5.png')
+def five(request):
+    return render(request, 't2/5.html')
