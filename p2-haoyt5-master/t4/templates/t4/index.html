@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Task 3</title>
+	<title>Task 4</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static '/vendors/bootstrap/css/bootstrap.css' %}" />
@@ -46,11 +46,22 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+      transition:transform 0.3s ease-out;
 		}
 
 		.action-complete {
-			background: #ffffff;
+			background: #7ce6df;
+      opacity:0.9;
 		}
+    .expand {
+      transform: scale(1.25);
+    }
+    .minimize{
+      transform: scale(0.5);
+    }
+    #swipe-box,#tap-box,#pan-box,#press-box,#rotate-box{
+      cursor:pointer;
+    }
 	</style>
 
 </head>
@@ -85,6 +96,63 @@
 	</div>
 	<script>
 	  // your solution here
+
+// 3-Press https://codepen.io/choskim/pen/RLYebL?page=1&
+    // Get a reference to an element
+    var pressbox = document.querySelector('#press-box');
+
+    // Create a manager to manager the element
+    var manager3 = new Hammer.Manager(pressbox);
+
+    // Create a recognizer
+    var Press = new Hammer.Press({
+      time: 300
+    });
+
+    // Add the recognizer to the manager3
+    manager3.add(Press);
+
+    // Subscribe to desired event
+    manager3.on('press', function(e) {
+      e.target.classList.toggle('minimize');
+      e.target.classList.toggle('action-complete');
+    });
+
+// 5-tap https://codepen.io/choskim/pen/WZggmg
+    // Get a reference to an element
+    var tapbox = document.querySelector('#tap-box');
+
+    // Create a manager to manage the element
+    var manager = new Hammer.Manager(tapbox);
+
+    // Create a recognizer
+    var Tap = new Hammer.Tap({
+      taps: 1
+    });
+
+    // Add the recognizer to the manager
+    manager.add(Tap);
+
+    // Subscribe to the desired event
+    manager.on('tap', function(e) {
+      e.target.classList.toggle('expand');
+      e.target.classList.toggle('action-complete');
+    });
+
+// 6-swipe https://codepen.io/choskim/pen/rGZqxa?page=1&
+$(function(){
+    var swipebox = document.getElementById("swipe-box");
+    
+    Hammer(swipebox).on("swipeleft", function() {
+          $(swipebox).animate({left: "-=100"}, 500)  
+    });
+    
+    Hammer(document.getElementById("swipe-box")).on("swiperight", function() {
+          $(swipebox).animate({left: "+=100"}, 500)  
+    });
+})
+
+
   </script>
 </body>
 </html>
