@@ -1,22 +1,21 @@
+{% load static %}
+
 <!DOCTYPE html>
 
 <html>
 	<head>
-		<title>Shopping Check List</title>
+		<title>Grocery List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  Import CSS   -->
 <!-- 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="../../../life/static/life/vendor/bootstrap/css/bootstrap.css">
-		<!-- <link rel="stylesheet" type="text/css" href="../../life/vendor/bootstrap/css/bootstrap.css' %}" /> -->
-    <link rel="stylesheet" href="../../../life/static/life/css/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="{% static '/life/css/main.css' %}" /> -->
+		<link rel="stylesheet" type="text/css" href="{% static '/life/vendor/bootstrap/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/life/css/main.css' %}" />
     <link rel="stylesheet" href="../../static/life/css/base.css">
-    <script src="../../../life/static/life/vendor/jquery/jquery-3.3.1.min.js"></script>
-		<!-- <script src="{% static '/life/vendor/jquery/jquery-3.3.1.min.js' %}"></script> -->
-    <script src="../../../life/static/life/vendor/jquery-ui/jquery-ui.min.js"></script>
+    
+		<script src="{% static '/life/vendor/jquery/jquery-3.3.1.min.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<!-- <script src="{% static '/life/vendor/jquery-ui/jquery-ui.min.js' %}"></script> -->
+		<script src="{% static '/life/vendor/jquery-ui/jquery-ui.min.js' %}"></script>
 
 
 
@@ -244,7 +243,7 @@
        <div class="wrapper">
         <!--    Start Shopping List      -->
         <div class="info">
-            <h1>WEEKLY SHOP LIST</h1>
+            <h1>WEEKLY GROCERY LIST</h1>
             <h4>July 20th</h4>
             <h6>July 15th~July 21st</h6>
         </div>
@@ -316,14 +315,14 @@
 
     //Added a shoplist    
     var shoplist={};
-    shoplist.name="WEEKLY SHOP LIST";
+    shoplist.name="WEEKLY SHOPPING LIST";
     shoplist.time="2018/07/21";
     // The list in the shoplist is an array;The shopitem is included in the array.    
     shoplist.list=[
       {name:"Milk",qty:1,price:17},
-      {name:"Advocado",qty:2,price:17},
+      {name:"Avocado",qty:2,price:17},
       {name:"Mushroom",qty:1,price:5.45},
-      {name:"Detegent",qty:1,price:11.99},
+      {name:"Detergent",qty:1,price:11.99},
       {name:"Garbage Bags",qty:1,price:12.69},
       {name:"Hand Soap",qty:1,price:9.34},
     ];
