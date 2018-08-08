@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.js"></script>
+        
+
+
+    </head>
+
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #F4F6AD;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .header {
+        height:55px;
+        width:100%;
+        background: white;
+        margin-bottom: 10px;
+    }
+    
+    #DoneSettingQuestion:disabled {
+        margin-top: 4px;
+        border-radius: 40px;
+        padding-left: 15px;
+        padding-right: 15px; 
+        background-color: transparent;
+        color: white;
+        font-weight: bolder;
+        font-size: 14px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+    }
+
+
+    .Qoftheday {
+        color:white;
+        font-size:22px;
+        font-weight:bolder;
+        text-shadow: 1px 1px 5px grey;
+    }
+
+    #Question {
+      font-weight: 1000;
+      font-size: 40px;
+      background: -webkit-linear-gradient(#ff6f00, #ff9f00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 110%;
+      
+      margin-top: 150px;
+      margin-bottom: 30px;
+    }
+    
+
+    #addAns {
+      margin-top: 30px;
+      max-width: 90%;
+      height:175px;
+      background-color: white;
+      border-style: dashed;
+      border-radius: 5px;
+      border-width: 3px;
+      border-color: #BDBDBD;
+      margin-left: 20px;
+    }
+
+    #submitQuestion {
+      border-radius: 40px;
+      padding: 20px 0px 20px 0px;
+      margin: 10px;
+      border: none;
+      background-color: orange;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px !important;
+    }
+
+    .AnsWrapper {
+      margin-left: 10px;
+      margin-top: 20px;
+      padding-bottom: 40px;
+      width: 95%;
+      min-height:200px;
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    .userWrapper {
+      max-width: 25%;
+      margin-left: 10px;
+      margin-top: 10px;
+      padding: 10px;
+      display: inline-block;
+    
+    }
+
+    .userName {
+      font-size: 16px;
+      font-weight: bold;
+      padding-left: 0px;
+    }
+
+    .titleWrapper {
+      font-size: 24px;
+      font-weight: bold;
+      padding-left: 4px;
+      max-width: 75%;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 10px;
+      display: inline-block;
+      color:grey;
+      vertical-align: text-bottom;
+    }
+
+
+
+
+    #menu {
+      position:fixed;
+      display:flex;
+      flex-direction: column;
+      left:-200px;
+      bottom:0px;
+      height:100%;
+      width:200px;
+      background:white;
+      vertical-align:middle;
+      z-index:100;
+      border-radius: 0px 20px 20px 0px;
+
+    }
+
+    .menuicon {
+      flex-direction: column;
+      justify-content:space-evenly;
+    }
+    
+    .menuICON {
+      color: #4D4C4C;
+      vertical-align:middle;
+      font-size:2.5em;
+      margin-top:5px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    .menuTxt {
+      font-size: 20px;
+      font-weight: bolder;
+      padding-left: 20px;
+      min-height: 50px;
+      display: inline-block;
+      padding-top: 5px;
+      max-width: 65%;   
+    }
+    
+
+    #SOS {
+      border-radius:100%;
+      background:white;
+      border:none;
+      width:130px;
+      display:inline-block;
+      box-shadow: 0px 0px 17px 1px #5a4b24b8;
+      height: 130px;
+      margin: 20px 35px 35px 35px;
+      text-align: center;
+      color:red;
+      padding:18px 2px 2px 10px;
+    }
+
+    #menuBG {
+      min-height: 100%;
+      min-width: 100%;
+      margin: 0;
+      background-color: orange;
+      opacity:0.7;
+      background-attachment: fixed;
+      background-size: cover;
+      z-index: 90;
+      position: fixed;
+      top:0;
+      left: -425px;
+    }
+
+
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    /* Container around content */
+    .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    /* The circles on the timeline */
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #FF9F55;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+
+    /* Place the container to the right */
+    .right {
+        left: 50%;
+    }
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Fix the circle for containers on the right side */
+    .right::after {
+        left: -16px;
+    }
+
+    /* The actual content */
+    .content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+    }
+      
+      /* Full-width containers */
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      
+      /* Make sure that all arrows are pointing leftwards */
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      /* Make sure all circles are at the same spot */
+      .right::after {
+        left: 15px;
+      }
+      
+      /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
+    
+    
+  </style>
+  
+  <body>
+    <div class="header">
+      <div style="max-width: 30%; margin-left: 26px;padding-top:13px; color:orange; font-weight: bolder;" onclick="toggleHideShow();">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </div> 
+      <div class="container-fluid">
+
+        <div class="row text-center align-item-center">
+            <div class="col-8">
+                <span class="Qoftheday">Question of the day</span>
+            </div>
+            <div class="col-4">
+                <button type="button" id="DoneSettingQuestion" disabled>DONE</button>
+            </div>
+        </div>
+        <div class="row align-item-center text-center">
+          <div class="col-12" id="Question">What do you have for meal today?</div>
+        </div>
+        <div class="row align-item-center">
+          <div class="col-1 align-item-center">&nbsp;</div>
+          <div class="col-10 align-item-center">
+            <div id="submitQuestion">Share it</div>
+          </div>
+          <div class="col-1 align-item-center">&nbsp;</div>
+        </div>
+        <div class="row" style="height:150px;">&nbsp;</div>
+        <div class="row align-item-center">
+          <div class="col-12" style="color:orange;font-size: 20px;text-align: center; margin-bottom: 30px;">
+          <span id="arrowDown"><i class="fas fa-angle-double-down fa-2x"></i></span>
+          </div>
+        </div>
+        <div class="row align-item-center">
+          <div class="col-12">
+            <div class="AnsWrapper">
+              <div class="userWrapper">
+                <i class="fas fa-user-circle fa-3x"></i>
+                <span class="userName">Jack</span>
+              </div>
+              <div class="titleWrapper" >
+                My Lunch!!
+              </div>
+              <div class="actualAns">
+                <img class="w3-border" style="padding:16px;width:90%;margin-left: 20px;" src="https://blog.bedbathandbeyond.com/wp-content/uploads/2017/05/healthy-lunch-salmon-couscous-low-res.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-item-center">
+          <div class="col-12">
+            <div class="AnsWrapper">
+              <div class="userWrapper">
+                <i class="fas fa-user-circle fa-3x"></i>
+                <span class="userName">Rose</span>
+              </div>
+              <div class="titleWrapper" >
+                Breakfast
+              </div>
+              <div class="actualAns">
+                <img class="w3-border" style="padding:16px;width:90%;margin-left: 20px;" src="https://www.skinnytaste.com/wp-content/uploads/2017/04/Breakfast-BLT-Salad-1-2.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+   <div id="menu">
+     <div style="height:20px;">&nbsp;</div>
+     <a>
+       <div style="padding: 44px 44px 0px 44px;margin-bottom: 20px;">
+         <i class="fas fa-user-circle fa-7x" style="padding-bottom: 5px"></i>
+         <span style="text-align: center; font-weight: bold; font-size: 16px">Linda Smith</span>
+       </div>
+     </a>
+     <div id="menuicon">
+      <a href="">
+       <div class="menuICON">
+         <i class="fas fa-home"></i><span class="menuTxt">HOME</span></div>
+      </a>
+      <a href="">
+       <div class="menuICON" >
+         <i class="fas fa-address-book" style="margin-left: 4px"></i><span class="menuTxt" style="padding-left: 25px;">FAMILY DIARY</span></div>
+      </a>
+      <a href="">
+       <div class="menuICON">
+         <i class="fas fa-heartbeat"></i><span class="menuTxt" style="padding-left: 24px;">HEALTH DATA</span></div>
+      </a>
+      <a href="">
+       <div class="menuICON">
+         <i class="fas fa-user-md"></i><span class="menuTxt" style="padding-left: 27px;">PROFILE</span></div>
+      </a>
+      </div>
+    <div id="SOS"><i class="fas fa-ambulance fa-4x"></i><div style="font-size: 24px;font-weight: 1000">SOS</div></div>
+
+    
+    </div>
+    <div id="menuBG" onclick="toggleHideShow();">&nbsp;</div>
+    <div id="homeButton"></div>
+  </body>
+  
+  <script>
+  function toggleHideShow() {
+    if ($( "#menu" ).css("left")=="-200px") {
+      $( "#menu" ).stop(true).animate({ left: "+=200px" }, 600 );
+      $("#menuBG").stop(true).animate({ left: "+=425px" }, 600 );
+    } else {
+        $("#menu").stop(true).animate({ left: "-=200px" }, 600);
+        $("#menuBG").stop(true).animate({ left: "-=425px" }, 600 );
+        //$("#homeButton").stop(true).animate({ bottom: "-=78px" }, 600);   
+    }   
+  }
+
+var $icon = $("#arrowDown");
+
+$icon.velocity({
+  translateY: "10px"
+}, {
+  loop: true
+}).velocity("reverse");
+  </script>
+</html>
+
+</html>
+
