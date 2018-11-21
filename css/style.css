@@ -296,7 +296,10 @@ body{
 .icon-btn2 .icon-link:active{
 	color:#2baad0;
 }
-
+/*introduction animation*/
+.ani-btn{
+	display: inline-block;
+}
 /*footer的設定*/
 .footer{
 	width: 100%;
