@@ -12,8 +12,20 @@ TextLink.propTypes = {
 };
 function Jumbotron() {
 	return (
-		<Row>
-			<Col lg="8 " className="text-dark">
+		<Row className="w-100">
+			<Col
+				lg={{ offset: 1, size: 3 }}
+				className="d-flex align-items-center justify-content-center"
+			>
+				<div style={{ width: "200px" }}>
+					<img
+						src="/assets/img/karen_profile.png"
+						className="img-fluid rounded"
+						alt="..."
+					/>
+				</div>
+			</Col>
+			<Col lg="7" className="text-dark">
 				<h1 className="display-4">
 					<strong>Hello, I&apos;m Karen</strong>
 				</h1>
@@ -21,8 +33,7 @@ function Jumbotron() {
 				<h3 className="text-secondary py-3" style={{ lineHeight: 1.5 }}>
 					I&apos;m a{" "}
 					<b className="text-dark text-highlight">software engineer</b> focusing
-					on front-end development with 2 years of professional experience in{" "}
-					<b className="text-dark ">web applications</b>.
+					on front-end development with 2 years of professional experience.
 				</h3>
 				<h5>
 					I am currently open to{" "}
@@ -50,7 +61,6 @@ function Jumbotron() {
 					.
 				</h5>
 			</Col>
-			<Col></Col>
 		</Row>
 	);
 }

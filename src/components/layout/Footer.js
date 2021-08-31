@@ -53,7 +53,7 @@ function Footer() {
 							icon={faPinterest}
 						/>
 					</Col>
-					<Col lg={{ offset: 6, size: 3 }}>
+					<Col lg={{ offset: 5, size: 4 }}>
 						<small>Copyright ©2021 All Rights Reserved by Karen HY Tu</small>
 					</Col>
 				</Row>
