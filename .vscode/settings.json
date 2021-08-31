@@ -1,11 +1,16 @@
 {
-    "prettier.enable": true,
-    "eslint.format.enable": true,
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    },
-    "cSpell.words": [
-        "karenhaoyitu"
-    ]
+	"prettier.enable": true,
+	"eslint.format.enable": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"cSpell.words": [
+		"Linkedin",
+		"Pinterest",
+		"Youtube",
+		"fontawesome",
+		"fortawesome",
+		"karenhaoyitu"
+	]
 }
