@@ -4,8 +4,8 @@ import Logo from "../Logo";
 
 function Navbar() {
 	return (
-		<Container fluid={true} className="pt-4">
-			<Row>
+		<Container fluid={true} className="pt-4 ">
+			<Row className="d-flex align-items-center">
 				<Col lg={{ offset: 1, size: 7 }}>
 					<Logo />
 				</Col>
