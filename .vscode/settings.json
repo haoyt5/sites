@@ -1,0 +1,11 @@
+{
+    "prettier.enable": true,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "cSpell.words": [
+        "karenhaoyitu"
+    ]
+}
