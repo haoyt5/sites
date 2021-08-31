@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-link{
+  text-decoration: none !important;
+}
+
+.text-highlight{
+  text-decoration: none;
+  /* background-color: #F8EAD0; */
+  color: black;
+}
+
+.link-cmu{
+  color:#a81a1a;
+}
+@media only screen and (max-width: 576px) {
+  .sm-logo {
+    display: none !important;
+  }
+}
