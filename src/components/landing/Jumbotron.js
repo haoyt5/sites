@@ -50,7 +50,7 @@ function Jumbotron() {
 					></TextLink>{" "}
 					profile, download my updated{" "}
 					<TextLink
-						href="/assets/pdf/KarenHao-YiTu_SoftwareEngineer.pdf"
+						href="/assets/pdf/Resume_KarenHYTu.pdf"
 						download
 						title="resume"
 					></TextLink>{" "}
