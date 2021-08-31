@@ -10,7 +10,13 @@ import {
 import PropTypes from "prop-types";
 
 const IconLink = ({ href, icon }) => (
-	<a style={{ fontSize: "1.35rem" }} className="link-light px-1" href={href}>
+	<a
+		style={{ fontSize: "1.35rem" }}
+		target="_blank"
+		className="link-light px-1"
+		href={href}
+		rel="noreferrer"
+	>
 		<FontAwesomeIcon icon={icon} />
 	</a>
 );

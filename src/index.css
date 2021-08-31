@@ -7,6 +7,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .btn-link{
   text-decoration: none !important;
+}
+
+.text-highlight{
+  text-decoration: none;
+  /* background-color: #F8EAD0; */
+  color: black;
+}
+
+.link-cmu{
+  color:#a81a1a;
 }

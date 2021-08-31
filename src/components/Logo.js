@@ -6,7 +6,7 @@ function Logo() {
 			className="text-dark d-flex align-items-center"
 			style={{ fontStyle: "italic", textDecoration: "none" }}
 			color="link"
-			href="www.karenhaoyitu.com"
+			href="/"
 		>
 			<div style={{ width: "3.5rem" }}>
 				<img src="/logo192.png" className="img-fluid" alt="..." />
