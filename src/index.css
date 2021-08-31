@@ -21,3 +21,8 @@ body {
 .link-cmu{
   color:#a81a1a;
 }
+@media only screen and (max-width: 576px) {
+  .sm-logo {
+    display: none !important;
+  }
+}

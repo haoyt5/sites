@@ -17,11 +17,17 @@ NavButton.propTypes = {
 function Navbar() {
 	return (
 		<Container fluid={true} className="pt-4">
-			<Row className="d-flex align-items-center">
-				<Col lg={{ offset: 1, size: 7 }}>
+			<Row className="d-flex flex-row align-items-center ">
+				<Col lg={{ offset: 1, size: 5 }} md={5} sm={6} xs={4}>
 					<Logo />
 				</Col>
-				<Col lg={{ size: 3 }} className="d-flex justify-content-end">
+				<Col
+					lg={{ size: 5 }}
+					md={7}
+					sm={6}
+					xs={8}
+					className="d-flex justify-content-end"
+				>
 					<NavButton
 						target="_blank"
 						title="Resume"
@@ -30,6 +36,7 @@ function Navbar() {
 					{/* <NavButton title="Works" href="#" /> */}
 					<NavButton title="Contact" href="mailto:karenhaoyitu@gmail.com" />
 				</Col>
+				<Col lg={{ size: 1 }} md="0" sm="0"></Col>
 			</Row>
 		</Container>
 	);

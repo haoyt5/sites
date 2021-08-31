@@ -4,7 +4,7 @@ import Jumbotron from "../landing/Jumbotron";
 
 function Body() {
 	return (
-		<Container style={{ paddingTop: "22.5vh" }}>
+		<Container style={{ padding: "100px 3vw" }}>
 			<Jumbotron />
 		</Container>
 	);

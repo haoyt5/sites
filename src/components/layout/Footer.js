@@ -27,18 +27,19 @@ IconLink.propTypes = {
 function Footer() {
 	return (
 		<div
-			className="pb-5 bg-dark text-light d-flex align-items-end "
+			className="bg-dark text-light"
 			style={{
-				position: "fixed",
-				left: 0,
-				bottom: 0,
-				width: "100%",
-				height: "6rem",
+				marginTop: "auto",
 			}}
 		>
 			<Container fluid={true}>
-				<Row className="w-100">
-					<Col lg={{ offset: 1, size: 2 }}>
+				<Row className="w-100 d-flex align-items-center">
+					<Col
+						className="py-1"
+						lg={{ offset: 1, size: 2 }}
+						md={{ offset: 1, size: 11 }}
+						sm="12"
+					>
 						<IconLink href="https://github.com/haoyt5" icon={faGithub} />
 						<IconLink
 							href="https://www.linkedin.com/in/haoyikarentu/"
@@ -53,8 +54,16 @@ function Footer() {
 							icon={faPinterest}
 						/>
 					</Col>
-					<Col lg={{ offset: 5, size: 4 }}>
-						<small>Copyright ©2021 All Rights Reserved by Karen HY Tu</small>
+					<Col
+						className="py-1"
+						lg={{ offset: 5, size: 4 }}
+						md={{ offset: 1, size: 11 }}
+						sm="12"
+					>
+						<small>
+							Copyright ©2021 <br />
+							All Rights Reserved by Karen HY Tu
+						</small>
 					</Col>
 				</Row>
 			</Container>

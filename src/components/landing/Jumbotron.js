@@ -15,7 +15,8 @@ function Jumbotron() {
 		<Row className="w-100">
 			<Col
 				lg={{ offset: 1, size: 3 }}
-				className="d-flex align-items-center justify-content-center"
+				md={{ offset: 1, size: 11 }}
+				className="my-4 d-flex align-items-center justify-content-center"
 			>
 				<div style={{ width: "200px" }}>
 					<img
@@ -25,7 +26,7 @@ function Jumbotron() {
 					/>
 				</div>
 			</Col>
-			<Col lg="7" className="text-dark">
+			<Col lg="7" md={{ offset: 1, size: 11 }} className="text-dark">
 				<h1 className="display-4">
 					<strong>Hello, I&apos;m Karen</strong>
 				</h1>
