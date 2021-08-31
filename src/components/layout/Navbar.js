@@ -3,8 +3,8 @@ import { Container, Row, Col, Button } from "reactstrap";
 import Logo from "../Logo";
 import PropTypes from "prop-types";
 
-const NavButton = ({ title, href }) => (
-	<Button color="link" href={href}>
+const NavButton = ({ title, href, ...props }) => (
+	<Button color="link" href={href} {...props}>
 		<b>{title}</b>
 	</Button>
 );
@@ -22,8 +22,12 @@ function Navbar() {
 					<Logo />
 				</Col>
 				<Col lg="4">
+					<NavButton
+						target="_blank"
+						title="Resume"
+						href="/assets/pdf/KarenHao-YiTu_SoftwareEngineer.pdf"
+					/>
 					<NavButton title="Works" href="#" />
-					<NavButton title="Resume" href="#" />
 					<NavButton title="Contact" href="#" />
 				</Col>
 			</Row>
