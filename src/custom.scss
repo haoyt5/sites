@@ -1,0 +1,6 @@
+// Override default variables before the import
+$link-color: #8b8d1b;
+$link-hover-color: #37380a;
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
