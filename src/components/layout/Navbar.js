@@ -16,19 +16,19 @@ NavButton.propTypes = {
 
 function Navbar() {
 	return (
-		<Container fluid={true} className="pt-4 ">
+		<Container fluid={true} className="pt-4">
 			<Row className="d-flex align-items-center">
 				<Col lg={{ offset: 1, size: 7 }}>
 					<Logo />
 				</Col>
-				<Col lg="4">
+				<Col lg={{ size: 3 }} className="d-flex justify-content-end">
 					<NavButton
 						target="_blank"
 						title="Resume"
 						href="/assets/pdf/KarenHao-YiTu_SoftwareEngineer.pdf"
 					/>
-					<NavButton title="Works" href="#" />
-					<NavButton title="Contact" href="#" />
+					{/* <NavButton title="Works" href="#" /> */}
+					<NavButton title="Contact" href="mailto:karenhaoyitu@gmail.com" />
 				</Col>
 			</Row>
 		</Container>

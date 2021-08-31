@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "reactstrap";
 
 function Logo() {
 	return (
-		<Button
-			className="text-dark d-flex justify-content-center align-items-center"
-			style={{ fontStyle: "italic" }}
+		<a
+			className="text-dark d-flex align-items-center"
+			style={{ fontStyle: "italic", textDecoration: "none" }}
 			color="link"
+			href="www.karenhaoyitu.com"
 		>
 			<div style={{ width: "3.5rem" }}>
 				<img src="/logo192.png" className="img-fluid" alt="..." />
@@ -16,7 +16,7 @@ function Logo() {
 					<b>karenhaoyitu.com</b>
 				</h1>
 			</div>
-		</Button>
+		</a>
 	);
 }
 
