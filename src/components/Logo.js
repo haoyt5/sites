@@ -8,7 +8,7 @@ function Logo() {
 			style={{ fontStyle: "italic" }}
 			color="link"
 		>
-			<div style={{ width: "4rem" }}>
+			<div style={{ width: "3.5rem" }}>
 				<img src="/logo192.png" className="img-fluid" alt="..." />
 			</div>
 			<div className="p-2">

@@ -1,6 +1,18 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Logo from "../Logo";
+import PropTypes from "prop-types";
+
+const NavButton = ({ title, href }) => (
+	<Button color="link" href={href}>
+		<b>{title}</b>
+	</Button>
+);
+
+NavButton.propTypes = {
+	title: PropTypes.string.isRequired,
+	href: PropTypes.string.isRequired,
+};
 
 function Navbar() {
 	return (
@@ -10,9 +22,9 @@ function Navbar() {
 					<Logo />
 				</Col>
 				<Col lg="4">
-					<Button color="link">Works</Button>
-					<Button color="link">Resume</Button>
-					<Button color="link">Contact</Button>
+					<NavButton title="Works" href="#" />
+					<NavButton title="Resume" href="#" />
+					<NavButton title="Contact" href="#" />
 				</Col>
 			</Row>
 		</Container>
