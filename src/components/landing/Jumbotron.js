@@ -7,9 +7,11 @@ const TextLink = ({ title, ...props }) => (
 		<b>{title}</b>
 	</a>
 );
+
 TextLink.propTypes = {
 	title: PropTypes.string.isRequired,
 };
+
 function Jumbotron() {
 	return (
 		<Row className="w-100">
@@ -58,6 +60,7 @@ function Jumbotron() {
 					<TextLink
 						href="https://github.com/haoyt5"
 						title="latest work"
+						rel="noreferrer"
 					></TextLink>
 					.
 				</h5>
