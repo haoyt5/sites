@@ -1,6 +1,8 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Row, Col } from "reactstrap";
 import PropTypes from "prop-types";
+
+const Profile = lazy(() => import("./Profile"));
 
 const TextLink = ({ title, ...props }) => (
 	<a className="text-success" target="_blank" {...props}>
@@ -21,11 +23,9 @@ function Jumbotron() {
 				className="my-4 d-flex align-items-center justify-content-center"
 			>
 				<div style={{ width: "200px" }}>
-					<img
-						src="/assets/img/karen_profile.png"
-						className="img-fluid rounded"
-						alt="..."
-					/>
+					<Suspense fallback={<span>...</span>}>
+						<Profile />
+					</Suspense>
 				</div>
 			</Col>
 			<Col lg="7" md={{ offset: 1, size: 11 }} className="text-dark">
