@@ -8,8 +8,8 @@ function Logo() {
 			color="link"
 			href="/"
 		>
-			<div style={{ width: "2.5rem" }}>
-				<img src="/logo192.png" className="img-fluid" alt="..." />
+			<div style={{ width: "2.5rem", height: "2.5rem" }}>
+				<img src="/logo80.png" className="img-fluid" alt="..." />
 			</div>
 			<div className="p-2 sm-logo">
 				<h1 style={{ fontSize: "1.5rem" }}>

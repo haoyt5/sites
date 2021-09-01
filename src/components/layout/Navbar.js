@@ -1,8 +1,7 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
-import Logo from "../Logo";
 import PropTypes from "prop-types";
-
+const Logo = lazy(() => import("../Logo"));
 const NavButton = ({ title, href, ...props }) => (
 	<Button color="link" href={href} {...props}>
 		<b>{title}</b>
@@ -19,7 +18,9 @@ function Navbar() {
 		<Container fluid={true} className="pt-4">
 			<Row className="d-flex flex-row align-items-center ">
 				<Col lg={{ offset: 1, size: 5 }} md={5} sm={6} xs={4}>
-					<Logo />
+					<Suspense fallback={<span>...</span>}>
+						<Logo />
+					</Suspense>
 				</Col>
 				<Col
 					lg={{ size: 5 }}

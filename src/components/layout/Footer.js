@@ -20,10 +20,12 @@ const IconLink = ({ href, icon }) => (
 		<FontAwesomeIcon icon={icon} />
 	</a>
 );
+
 IconLink.propTypes = {
-	icon: PropTypes.string.isRequired,
+	icon: PropTypes.object.isRequired,
 	href: PropTypes.string.isRequired,
 };
+
 function Footer() {
 	return (
 		<div
