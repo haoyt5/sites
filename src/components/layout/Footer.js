@@ -44,16 +44,16 @@ function Footer() {
 					>
 						<IconLink href="https://github.com/haoyt5" icon={faGithub} />
 						<IconLink
-							href="https://www.linkedin.com/in/haoyikarentu/"
+							href="https://www.linkedin.com/in/karenhytu/"
 							icon={faLinkedin}
 						/>
 						<IconLink
 							href="https://www.pinterest.com/karenhaoyi/graphic-design/"
-							icon={faYoutube}
+							icon={faPinterest}
 						/>
 						<IconLink
 							href="https://www.youtube.com/channel/UCLKVQ7801gi-7K-PUmOyXDg/featured?view_as=subscriber"
-							icon={faPinterest}
+							icon={faYoutube}
 						/>
 					</Col>
 					<Col
