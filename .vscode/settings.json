@@ -6,14 +6,15 @@
 		"source.fixAll": true
 	},
 	"cSpell.words": [
-		"Linkedin",
-		"Pinterest",
-		"Youtube",
 		"apos",
 		"browserslist",
 		"fontawesome",
 		"fortawesome",
 		"karenhaoyitu",
-		"noreferrer"
+		"Linkedin",
+		"noreferrer",
+		"Pinterest",
+		"predeploy",
+		"Youtube"
 	]
 }
