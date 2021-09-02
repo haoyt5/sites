@@ -32,7 +32,7 @@ function Navbar() {
 					<NavButton
 						target="_blank"
 						title="Resume"
-						href="/assets/pdf/Resume_KarenHYTu.pdf"
+						href="/assets/resume/Resume_KarenHYTu.pdf"
 					/>
 					{/* <NavButton title="Works" href="#" /> */}
 					<NavButton title="Contact" href="mailto:karenhaoyitu@gmail.com" />

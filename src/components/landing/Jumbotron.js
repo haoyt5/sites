@@ -46,13 +46,13 @@ function Jumbotron() {
 				<h5>
 					Feel free to view my{" "}
 					<TextLink
-						href="https://www.linkedin.com/in/haoyikarentu/"
+						href="https://www.linkedin.com/in/karenhytu/"
 						rel="noreferrer"
 						title="LinkedIn"
 					></TextLink>{" "}
 					profile, download my updated{" "}
 					<TextLink
-						href="/assets/pdf/Resume_KarenHYTu.pdf"
+						href="/assets/resume/Resume_KarenHYTu.pdf"
 						download
 						title="resume"
 					></TextLink>{" "}
