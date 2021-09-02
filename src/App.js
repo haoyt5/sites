@@ -1,17 +1,14 @@
 import React from "react";
-import Navbar from "./components/layout/Navbar";
-import Body from "./components/layout/Body";
-import Footer from "./components/layout/Footer";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
 
 function App() {
 	return (
-		<div
-			style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
-		>
-			<Navbar />
-			<Body />
-			<Footer />
-		</div>
+		<Router>
+			<Switch>
+				<Route component={Landing} />
+			</Switch>
+		</Router>
 	);
 }
 
