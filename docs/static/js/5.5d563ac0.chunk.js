@@ -1,2 +1,0 @@
-(this.webpackJsonpsites=this.webpackJsonpsites||[]).push([[5],{48:function(s,e,t){"use strict";t.r(e);t(1);var i=t(2);e.default=function(){return Object(i.jsx)("div",{style:{width:"200px"},children:Object(i.jsx)("img",{src:"/assets/img/karen_profile.png",className:"img-fluid rounded",alt:"..."})})}}}]);
-//# sourceMappingURL=5.5d563ac0.chunk.js.map
