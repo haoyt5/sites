@@ -1,6 +1,7 @@
 import React from "react";
 import { Row } from "reactstrap";
 import { SectionTitle } from "../layout/Typography";
+import JobDescription from "../../components/landing/JobDescription";
 import { formatDate } from "../../utility/common";
 import PropTypes from "prop-types";
 
@@ -19,7 +20,7 @@ EdLineItem.propTypes = {
 	item: PropTypes.object,
 };
 const JobBlock = ({ item }) => (
-	<div className="d-flex">
+	<div className="d-flex pb-4">
 		<div className="job-company">
 			<h5 className="text-success">
 				<strong>{item.company}</strong>
@@ -33,7 +34,7 @@ const JobBlock = ({ item }) => (
 				{formatDate(item.start_date)} — {formatDate(item.end_date)}
 			</h6>
 			<p className="m-0 text-main">{item.sub_title}</p>
-			<p></p>
+			{JobDescription(item.id)}
 		</div>
 	</div>
 );

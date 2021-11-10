@@ -12,4 +12,14 @@ SectionTitle.propTypes = {
 	id: PropTypes.string.isRequired,
 };
 
-export { SectionTitle };
+const TextLink = ({ text, href }) => (
+	<a href={href} className="link-success text" rel="noreferrer" target="_blank">
+		{text}
+	</a>
+);
+TextLink.propTypes = {
+	text: PropTypes.string.isRequired,
+	href: PropTypes.string.isRequired,
+};
+
+export { SectionTitle, TextLink };

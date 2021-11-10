@@ -28,7 +28,7 @@ SocialLink.propTypes = {
 function Experience() {
 	return (
 		<div>
-			<SectionTitle title="Contact Me 📮" />
+			<SectionTitle title="Contact Me 📮" id="contact" />
 			<div
 				style={{
 					padding: "50px 0",
