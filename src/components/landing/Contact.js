@@ -5,6 +5,7 @@ import {
 	faLinkedinIn,
 	faFacebookMessenger,
 } from "@fortawesome/free-brands-svg-icons";
+import { SectionTitle } from "../layout/Typography";
 import PropTypes from "prop-types";
 
 const SocialLink = ({ href, icon }) => (
@@ -27,9 +28,7 @@ SocialLink.propTypes = {
 function Experience() {
 	return (
 		<div>
-			<Row className="text-center">
-				<h3>Contact Me 📮</h3>
-			</Row>
+			<SectionTitle title="Contact Me 📮" />
 			<div
 				style={{
 					padding: "50px 0",
@@ -38,7 +37,7 @@ function Experience() {
 				}}
 			>
 				<Row className="text-left">
-					<Col lg={{ size: "7", offset: "3" }}>
+					<Col lg={{ size: "6", offset: "3" }}>
 						<h5>
 							Feel free to reach out via email at karenhaoyitu@gmail.com or on
 							social media whether you have questions or want to say hi. 🙂{" "}

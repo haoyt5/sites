@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
+import { SectionTitle } from "../layout/Typography";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +9,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 function Experience() {
 	return (
 		<div>
-			<Row className="text-center">
-				<h3>Projects 🌷</h3>
-			</Row>
+			<SectionTitle title="Projects 🌷" />
 			<Row>
 				<Col>
 					<Row>
