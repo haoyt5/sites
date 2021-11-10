@@ -17,7 +17,9 @@ body {
   /* background-color: #F8EAD0; */
   color: black;
 }
-
+.text-main{
+  color:#5B5C07;
+}
 .link-cmu{
   color:#a81a1a;
 }
@@ -25,4 +27,11 @@ body {
   .sm-logo {
     display: none !important;
   }
+}
+
+.job-company{
+  width: 25%;
+}
+.job-description{
+  width: 75%;
 }

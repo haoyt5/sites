@@ -7,3 +7,15 @@ export const getData = async (path) => {
 	}).then((response) => response.json());
 	return data;
 };
+
+export const formatDate = (date) => {
+	if (date) {
+		const formattedDate = new Date(date).toLocaleDateString("en-US", {
+			timeZone: "UTC",
+			year: "2-digit",
+			month: "short",
+		});
+		return formattedDate;
+	}
+	return "";
+};

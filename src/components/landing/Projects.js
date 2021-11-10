@@ -9,7 +9,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 function Experience() {
 	return (
 		<div>
-			<SectionTitle title="Projects 🌷" />
+			<SectionTitle title="Projects 🌷" id="project" />
 			<Row>
 				<Col>
 					<Row>

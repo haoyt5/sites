@@ -29,6 +29,8 @@ function Navbar() {
 					xs={8}
 					className="d-flex justify-content-end"
 				>
+					<NavButton title="Experience" href="/#experience" />
+					<NavButton title="Project" href="/#project" />
 					<NavButton
 						target="_blank"
 						title="Resume"
