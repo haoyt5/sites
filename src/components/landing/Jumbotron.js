@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Profile = lazy(() => import("./Profile"));
 
 const TextLink = ({ title, ...props }) => (
-	<a className="text-success" target="_blank" {...props}>
+	<a className="text-success link-line" target="_blank" {...props}>
 		<b>{title}</b>
 	</a>
 );

@@ -12,7 +12,7 @@ const SocialLink = ({ href, icon }) => (
 	<a
 		style={{ fontSize: "1.35rem" }}
 		target="_blank"
-		className="px-2 link-dark"
+		className="px-2 link-dark link-dark-hover"
 		href={href}
 		rel="noreferrer"
 	>
@@ -21,11 +21,12 @@ const SocialLink = ({ href, icon }) => (
 );
 
 SocialLink.propTypes = {
-	icon: PropTypes.object.isRequired,
-	href: PropTypes.string.isRequired,
+	icon: PropTypes.object,
+	href: PropTypes.string,
 };
 
-function Experience() {
+function Contact({ data }) {
+	const socials = data?.socials;
 	return (
 		<div>
 			<SectionTitle title="Contact Me 📮" id="contact" />
@@ -40,7 +41,8 @@ function Experience() {
 					<Col
 						lg={{ size: "6", offset: "3" }}
 						md={{ size: "8", offset: "2" }}
-						sm={{ size: "10", offset: "1" }}
+						sm={{ size: "11", offset: "1" }}
+						className="px-2"
 					>
 						<h5>
 							Feel free to reach out via email at karenhaoyitu@gmail.com or on
@@ -50,18 +52,26 @@ function Experience() {
 				</Row>
 				<Row className="text-center">
 					<h4 className="py-2">
-						<SocialLink href={"/"} icon={faLinkedinIn} />
-						<SocialLink href={"/"} icon={faFacebookMessenger} />
+						{socials && (
+							<>
+								<SocialLink href={socials.linkedin} icon={faLinkedinIn} />
+								<SocialLink href={socials.fb} icon={faFacebookMessenger} />
+							</>
+						)}
 					</h4>
 					<h4>
-						<Button color="success" outline>
-							Send an Email
-						</Button>
+						<a href={`mailto:${socials?.email}`}>
+							<Button color="dark" outline>
+								Send an Email
+							</Button>
+						</a>
 					</h4>
 				</Row>
 			</div>
 		</div>
 	);
 }
-
-export default Experience;
+Contact.propTypes = {
+	data: PropTypes.object,
+};
+export default Contact;

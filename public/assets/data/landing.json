@@ -31,6 +31,7 @@
 		{
 			"company": "Trend Micro Inc.",
 			"id": "trendMicro",
+			"company_link": "https://www.trendmicro.com/en_us/business.html",
 			"title": "Sr. Engineer",
 			"sub_title": "Credit System・Activation Service・Channel Digital Platform",
 			"start_date": "2019-06",
@@ -39,6 +40,7 @@
 		{
 			"company": "AppWorks School",
 			"id": "appWorks",
+			"company_link": "https://appworks.tw/",
 			"title": "Web Class Trainee",
 			"sub_title": "E-commerce Website・Ｗeb Application",
 			"start_date": "2019-01",

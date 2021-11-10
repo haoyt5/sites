@@ -23,7 +23,14 @@ const JobBlock = ({ item }) => (
 	<div className="job-container pb-4">
 		<div className="job-company text-success">
 			<h5>
-				<strong>{item.company}</strong>
+				<a
+					href={item.company_link}
+					className="link-line"
+					rel="noreferrer"
+					target="_blank"
+				>
+					<strong>{item.company}</strong>
+				</a>
 			</h5>
 		</div>
 		<div className="job-description">

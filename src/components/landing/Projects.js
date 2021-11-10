@@ -23,7 +23,7 @@ const LinkButton = ({ href, icon, text }) =>
 
 LinkButton.propTypes = {
 	href: PropTypes.string,
-	icon: PropTypes.string,
+	icon: PropTypes.object,
 	text: PropTypes.string,
 };
 

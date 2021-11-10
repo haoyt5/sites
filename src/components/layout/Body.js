@@ -22,7 +22,7 @@ function Body() {
 					<Projects data={data} />
 				</Suspense>
 			</Container>
-			<Contact />
+			<Contact data={data} />
 		</>
 	);
 }

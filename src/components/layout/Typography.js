@@ -13,7 +13,12 @@ SectionTitle.propTypes = {
 };
 
 const TextLink = ({ text, href }) => (
-	<a href={href} className="link-success text" rel="noreferrer" target="_blank">
+	<a
+		href={href}
+		className="text-success"
+		rel="noreferrer"
+		target={href[0] === "/" ? null : "_blank"}
+	>
 		{text}
 	</a>
 );

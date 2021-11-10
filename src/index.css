@@ -60,3 +60,31 @@ body {
  @media (max-width: 576px) { 
 
 }
+
+a.link-line {
+  display: inline-block;
+  position: relative;
+  color: #408458;
+  text-decoration: none;
+}
+a.link-line ::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.18s ease-out;
+}
+a.link-line :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link-dark-hover:hover{
+  color: #408458 ;
+}
