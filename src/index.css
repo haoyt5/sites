@@ -28,10 +28,35 @@ body {
     display: none !important;
   }
 }
-
+.job-container{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
 .job-company{
-  width: 25%;
+  width: 30%;
 }
 .job-description{
-  width: 75%;
+  width: 70%;
+}
+/* lg: 992 */
+@media only screen and (max-width: 992px) { 
+
+ }
+ /* md: 768 */
+@media only screen and (max-width: 768px) { 
+  .job-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .job-company{
+    width: 100%;
+  }
+  .job-description{
+    width: 100%;
+  }
+}
+ /* sm: 576 */
+ @media (max-width: 576px) { 
+
 }

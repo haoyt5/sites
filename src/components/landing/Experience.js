@@ -20,9 +20,9 @@ EdLineItem.propTypes = {
 	item: PropTypes.object,
 };
 const JobBlock = ({ item }) => (
-	<div className="d-flex pb-4">
-		<div className="job-company">
-			<h5 className="text-success">
+	<div className="job-container pb-4">
+		<div className="job-company text-success">
+			<h5>
 				<strong>{item.company}</strong>
 			</h5>
 		</div>

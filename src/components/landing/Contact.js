@@ -37,7 +37,11 @@ function Experience() {
 				}}
 			>
 				<Row className="text-left">
-					<Col lg={{ size: "6", offset: "3" }}>
+					<Col
+						lg={{ size: "6", offset: "3" }}
+						md={{ size: "8", offset: "2" }}
+						sm={{ size: "10", offset: "1" }}
+					>
 						<h5>
 							Feel free to reach out via email at karenhaoyitu@gmail.com or on
 							social media whether you have questions or want to say hi. 🙂{" "}
