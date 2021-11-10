@@ -30,7 +30,7 @@ function Navbar() {
 					className="d-flex justify-content-end"
 				>
 					<NavButton title="Experience" href="/#experience" />
-					<NavButton title="Project" href="/#project" />
+					<NavButton title="Projects" href="/#project" />
 					<NavButton
 						target="_blank"
 						title="Resume"
