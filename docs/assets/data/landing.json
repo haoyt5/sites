@@ -1,0 +1,76 @@
+{
+	"socials": {
+		"linkedin": "https://www.linkedin.com/in/karenhytu/",
+		"github": "https://github.com/haoyt5",
+		"fb": "https://www.facebook.com/haoyi.tu",
+		"pinterest": "https://www.pinterest.com/karenhaoyi/graphic-design/",
+		"youtube": "https://www.youtube.com/channel/UCLKVQ7801gi-7K-PUmOyXDg/featured?view_as=subscriber",
+		"email": "karenhaoyitu@gmail.com"
+	},
+	"education": [
+		{
+			"school": "Carnegie Mellon University",
+			"location": "Mountain View, CA",
+			"degree": "Master of Science in Software Engineering",
+			"grad_date": "May 2023 (Expected)"
+		},
+		{
+			"school": "New York University, Tandon School of Engineering",
+			"location": "Brooklyn, NY",
+			"degree": "Preparatory Course for Graduate Studies in Computing",
+			"grad_date": "July 2021"
+		},
+		{
+			"school": "National Taiwan Normal University",
+			"location": "Taipei, Taiwan",
+			"degree": "Bachelor of Arts in History",
+			"grad_date": "January 2017"
+		}
+	],
+	"professional": [
+		{
+			"company": "Trend Micro Inc.",
+			"id": "trendMicro",
+			"company_link": "https://www.trendmicro.com/en_us/business.html",
+			"title": "Sr. Engineer",
+			"sub_title": "Credit System・Activation Service・Channel Digital Platform",
+			"start_date": "2019-06",
+			"end_date": "2021-08"
+		},
+		{
+			"company": "AppWorks School",
+			"id": "appWorks",
+			"company_link": "https://appworks.tw/",
+			"title": "Web Class Trainee",
+			"sub_title": "E-commerce Website・Ｗeb Application",
+			"start_date": "2019-01",
+			"end_date": "2019-06"
+		}
+	],
+	"projects": [
+		{
+			"name": "HOMIE",
+			"demo": "https://haoyt5.github.io/Homie",
+			"code": "https://github.com/haoyt5/Homie",
+			"title": "Housework Management Web App",
+			"description": "HOMIE is a cloud-based app built with React, Redux, D3.js, and Firebase. Built member, group and task management and point reward feature with Firebase Authentication, Cloud Firestore, and Firebase Storage.",
+			"id": "homie"
+		},
+		{
+			"name": "STYLiSH",
+			"demo": null,
+			"code": "https://github.com/haoyt5/Stylish",
+			"title": "eCommerce Clothes Shopping Site",
+			"description": "STYLISH is a fashion clothes e-commerce shop, implemented with HTML, CSS, and AJAX.  Added third party login features with Facebook and Google OAuth API. Developed the shopping cart feature combining Web Storage API and third-party payment service. Leveraged Socket.io to implement the realtime customer service.",
+			"id": "stylish"
+		},
+		{
+			"name": "NS Watcher",
+			"demo": "https://haoyt5.github.io/nswatcher/",
+			"code": "https://github.com/haoyt5/nswatcher",
+			"title": "Android App Intro Website",
+			"description": "Developed and deployed the introduction website using HTML, CSS, and Javascript and optimized with RWD, SEO, and Google Analytics.",
+			"id": "nswatcher"
+		}
+	]
+}
