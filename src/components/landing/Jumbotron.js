@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Row, Col } from "reactstrap";
 import PropTypes from "prop-types";
-
+import { RoundBlockLink } from "../../components/layout/Typography";
 const Profile = lazy(() => import("./Profile"));
 
 const TextLink = ({ title, ...props }) => (
@@ -16,8 +16,8 @@ TextLink.propTypes = {
 
 function Jumbotron() {
 	return (
-		<div style={{ minHeight: "80vh" }}>
-			<Row className="w-100">
+		<div style={{ minHeight: "78vh" }}>
+			<Row className="w-100 pt-5">
 				<Col
 					lg={{ offset: 1, size: 3 }}
 					md={{ offset: 1, size: 11 }}
@@ -29,25 +29,51 @@ function Jumbotron() {
 						</Suspense>
 					</div>
 				</Col>
-				<Col lg="7" md={{ offset: 1, size: 11 }} className="text-dark">
-					<h1 className="display-4">
-						<strong>Hello, I&apos;m Karen</strong>
+				<Col
+					lg="7"
+					md={{ offset: 1, size: 11 }}
+					className="text-dark text-introduction"
+				>
+					<h1>
+						<strong>Hello I am Karen Tu </strong>
 					</h1>
-
-					<h3 className="text-secondary py-3" style={{ lineHeight: 1.5 }}>
-						I&apos;m a{" "}
-						<b className="text-dark text-highlight">software engineer</b>{" "}
-						focusing on front-end development with 2 years of professional
-						experience.
+					<h3 className="mb-3">
+						<strong>A Software Engineer @ Mountain View, CA</strong>
 					</h3>
-					<h5>
-						I am currently open to{" "}
-						<b className="bg-success text-light">
-							SDE internship opportunities
-						</b>{" "}
-						💫 .
-					</h5>
-					<h5>
+					<p>
+						I’m currently pursuing my MS degree in software engineering at CMU
+						Silicon Valley. Previously, I worked at Trend Micro at the licensing
+						team for two years focusing on front-end development building
+						platforms for NABU and EU sales teams and thousands of our business
+						customers using React and Redux.
+					</p>
+					<p>
+						🎐 I am also seeking a software engineer internship(2022 summer). If
+						you think think I am a good fit, please{" "}
+						<RoundBlockLink
+							text="contact me"
+							href="/#contact"
+							style={{ backgroundColor: "#6CA981" }}
+						/>{" "}
+						at karenhaoyitu@gmail.com or haoyt@andrew.cmu.edu.
+					</p>
+					<p>
+						Feel free to read about my professional{" "}
+						<RoundBlockLink
+							text="experience"
+							style={{ backgroundColor: "#82ABCA" }}
+							href="/#experience"
+						/>{" "}
+						and{" "}
+						<RoundBlockLink
+							style={{ backgroundColor: "#B782CA" }}
+							text="projects"
+							href="/#project"
+						/>
+						! 🚀
+					</p>
+
+					{/* <h5>
 						Feel free to view my{" "}
 						<TextLink
 							href="https://www.linkedin.com/in/karenhytu/"
@@ -67,7 +93,7 @@ function Jumbotron() {
 							rel="noreferrer"
 						></TextLink>
 						.
-					</h5>
+					</h5> */}
 				</Col>
 			</Row>
 		</div>

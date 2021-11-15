@@ -6,7 +6,10 @@ import { formatDate } from "../../utility/common";
 import PropTypes from "prop-types";
 
 const EdLineItem = ({ item }) => (
-	<p style={{ margin: 0, fontSize: "1rem", lineHeight: "1.5rem" }}>
+	<p
+		className="m-0"
+		style={{ margin: 0, fontSize: "1rem", lineHeight: "1.75rem" }}
+	>
 		<span className="text-success">
 			<strong>{item.school},</strong> {item.location}
 		</span>
