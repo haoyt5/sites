@@ -26,7 +26,7 @@ const JobDescription = (id) => {
 						contest (2020)
 					<br />
 						🥇 1st place among 20 teams in the Information System(IS) DevOps
-						Camp. (2019)
+						Camp (2019)
 				</p>
 			</div>
 		);

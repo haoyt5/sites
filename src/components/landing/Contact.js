@@ -32,22 +32,19 @@ function Contact({ data }) {
 			<SectionTitle title="Contact Me 📮" id="contact" />
 			<div
 				style={{
-					padding: "50px 0",
+					padding: "50px 0.75rem",
 					background:
 						"linear-gradient(90deg, rgba(223,225,198,1) 0%, rgba(208,223,209,1) 100%)",
 				}}
 			>
-				<Row className="text-left">
+				<Row className="text-left text-introduction ">
 					<Col
 						lg={{ size: "6", offset: "3" }}
 						md={{ size: "8", offset: "2" }}
-						sm={{ size: "11", offset: "1" }}
-						className="px-2"
+						sm="12"
 					>
-						<h5>
-							Feel free to reach out via email at karenhaoyitu@gmail.com or on
-							social media whether you have questions or want to say hi. 🙂{" "}
-						</h5>
+						Feel free to reach out via email at <b>karenhaoyitu@gmail.com</b> or
+						on social media whether you have questions or want to say hi. 🙂{" "}
 					</Col>
 				</Row>
 				<Row className="text-center">

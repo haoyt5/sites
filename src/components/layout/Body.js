@@ -15,7 +15,7 @@ function Body() {
 
 	return (
 		<>
-			<Container style={{ padding: "100px 3vw" }}>
+			<Container style={{ padding: "10vh 3vw" }}>
 				<Suspense fallback={<span>...</span>}>
 					<Jumbotron />
 					<Experience data={data} />
