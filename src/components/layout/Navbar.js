@@ -1,7 +1,11 @@
 import React, { lazy, Suspense } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
+import HamburgerBar from "./HamburgerBar";
 import PropTypes from "prop-types";
+import * as config from "../../utility/config.json";
+
 const Logo = lazy(() => import("../Logo"));
+
 const NavButton = ({ title, href, ...props }) => (
 	<Button color="link" href={href} {...props}>
 		<b>{title}</b>
@@ -14,8 +18,9 @@ NavButton.propTypes = {
 };
 
 function Navbar() {
+	const { nav } = config.default;
 	return (
-		<Container fluid={true} className="pt-4">
+		<Container fluid={true} className="py-2  bg-white fixed-top ">
 			<Row className="d-flex flex-row align-items-center ">
 				<Col lg={{ offset: 1, size: 5 }} md={5} sm={6} xs={4}>
 					<Suspense fallback={<span>...</span>}>
@@ -29,14 +34,18 @@ function Navbar() {
 					xs={8}
 					className="d-flex justify-content-end"
 				>
-					<NavButton
-						target="_blank"
-						title="Resume"
-						href="/assets/resume/Resume_KarenHYTu.pdf"
-					/>
-					{/* <NavButton title="Works" href="#" /> */}
-					<NavButton title="Contact" href="mailto:karenhaoyitu@gmail.com" />
+					{nav.map((item) => (
+						<NavButton
+							className="lg-navbar"
+							key={item.url}
+							title={item.name}
+							href={item.url}
+							target={item.target ? "_blank" : null}
+						/>
+					))}
+					<HamburgerBar nav={nav} />
 				</Col>
+
 				<Col lg={{ size: 1 }} md="0" sm="0"></Col>
 			</Row>
 		</Container>

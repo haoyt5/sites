@@ -1,0 +1,28 @@
+{
+	"nav": [
+		{
+			"name": "Experience",
+			"url": "/#experience",
+			"theme": "blue",
+			"target": false
+		},
+		{
+			"name": "Projects",
+			"url": "/#project",
+			"theme": "purple",
+			"target": false
+		},
+		{
+			"name": "Resume",
+			"url": "/assets/resume/Resume_KarenHYTu.pdf",
+			"theme": "yellow",
+			"target": true
+		},
+		{
+			"name": "Contact",
+			"url": "mailto:karenhaoyitu@gmail.com",
+			"theme": "green",
+			"target": false
+		}
+	]
+}
