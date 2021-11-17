@@ -27,7 +27,7 @@ RoundBlockLink.propTypes = {
 	href: PropTypes.string.isRequired,
 };
 const SectionTitle = ({ title, id }) => (
-	<div className="text-center pt-5 pb-4 m-0" id={id}>
+	<div className="text-center pb-4 m-0" id={id} style={{ paddingTop: "70px" }}>
 		<h3>{title}</h3>
 	</div>
 );

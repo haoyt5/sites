@@ -16,7 +16,7 @@ TextLink.propTypes = {
 
 function Jumbotron() {
 	return (
-		<div style={{ minHeight: "78vh" }}>
+		<div style={{ minHeight: "82vh" }}>
 			<Row className="w-100 m-0 pt-jumbotron">
 				<Col
 					lg={{ offset: 1, size: 3 }}
@@ -58,7 +58,7 @@ function Jumbotron() {
 							href="/#contact"
 							style={{ backgroundColor: "#6CA981" }}
 						/>{" "}
-						at karenhaoyitu@gmail.com or haoyt@andrew.cmu.edu.
+						at karenhaoyitu@gmail.com or haoyit@andrew.cmu.edu.
 					</div>
 					<br />
 					<div>
