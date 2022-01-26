@@ -68,7 +68,7 @@ function Projects({ data }) {
       <Row>
         {projects &&
           projects.map((item) => (
-            <Col key={item.id} className="col-6 px-4">
+            <Col key={item.id} className="col-lg-6 px-4 col-md-12">
               <ProjectCard {...item} />
             </Col>
           ))}
