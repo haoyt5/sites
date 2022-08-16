@@ -31,7 +31,7 @@
     {
       "company": "Johnson Controls Inc.",
       "id": "jci",
-      "company_link": "https://www.trendmicro.com/en_us/business.html",
+      "company_link": "https://www.johnsoncontrols.com/",
       "title": "Software Engineering Intern",
       "sub_title": "App Store",
       "start_date": "2022-06",
@@ -57,14 +57,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "Emergency Social Network (ESN)",
-      "demo": "https://youtu.be/vmLkmKClpJE",
-      "code": null,
-      "title": "Emergency Medical Assistance Web App",
-      "description": "",
-      "id": "fseesn"
-    },
     {
       "name": "FSEChat Room",
       "demo": "https://youtu.be/5-F7P078lAY",
