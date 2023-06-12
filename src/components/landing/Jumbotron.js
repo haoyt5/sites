@@ -43,17 +43,16 @@ function Jumbotron() {
             <strong>Software Engineer @ Mountain View, CA</strong>
           </h3>
           <div>
-            I’m currently pursuing my MS degree in software engineering at CMU
-            Silicon Valley. Previously, I worked at Trend Micro at the licensing
-            team for two years focusing on front-end development building
-            platforms for NABU and EU sales teams and thousands of our business
-            customers using React and Redux.
+            I just graduated from Carnegie Mellon University . Previously, I
+            interned at Johnson Controls at the cloud team at 22 summer and
+            Trend Micro at the licensing team for two years focusing on full
+            stack development building platforms for NABU and EU sales teams and
+            thousands of our business customers using React and Redux.
           </div>
           <br />
           <div>
-            🎐 I will graduate in May 2023. Thus, I am currently seeking for a
-            full-time software development engineer position. If you think I am
-            a good fit, please{" "}
+            🎐 I am currently seeking for a full-time software development
+            engineer position. If you think I am a good fit, please{" "}
             <RoundBlockLink
               text="contact me"
               href="/#contact"
@@ -77,28 +76,6 @@ function Jumbotron() {
             />
             ! 🚀
           </div>
-
-          {/* <h5>
-						Feel free to view my{" "}
-						<TextLink
-							href="https://www.linkedin.com/in/karenhytu/"
-							rel="noreferrer"
-							title="LinkedIn"
-						></TextLink>{" "}
-						profile, download my updated{" "}
-						<TextLink
-							href="/assets/resume/Resume_KarenHYTu.pdf"
-							download
-							title="resume"
-						></TextLink>{" "}
-						, or checkout my{" "}
-						<TextLink
-							href="https://github.com/haoyt5"
-							title="latest work"
-							rel="noreferrer"
-						></TextLink>
-						.
-					</h5> */}
         </Col>
       </Row>
     </div>
