@@ -12,7 +12,7 @@
       "school": "Carnegie Mellon University",
       "location": "Mountain View, CA",
       "degree": "Master of Science in Software Engineering",
-      "grad_date": "May 2023 (Expected)"
+      "grad_date": "May 2023"
     },
     {
       "school": "New York University, Tandon School of Engineering",
@@ -57,6 +57,22 @@
     }
   ],
   "projects": [
+    {
+      "name": "Money Tracker",
+      "demo": "https://www.youtube.com/watch?v=jmr0IM8G448&ab_channel=KarenTu",
+      "code": "https://github.com/haoyt5/money-tracker",
+      "title": "Expense Tracking Web App",
+      "description": "Money Tracker is an expense tracking web application that utilizes the MERN (MongoDB, Express, React, Node.js) stack along with TypeScript and Storybook. The application provides various features, including expense records, expense category summaries, and dynamic updates.",
+      "id": "moneytracker"
+    },
+    {
+      "name": "CMUSV One",
+      "demo": "https://youtu.be/VYamod-SMXc",
+      "code": null,
+      "title": "Meeting Room Reservation System",
+      "description": "CMUSV One is a login-required meeting room reservation microservice system that utilizes TypeScript, React, Express, Flask, and Node.js, with integration of SendGrid. The system offers several features, including meeting room reservation, search functionality for meeting rooms, calendar view, meeting notifications, and calendar sharing.",
+      "id": "cmusvone"
+    },
     {
       "name": "FSEChat Room",
       "demo": "https://youtu.be/5-F7P078lAY",
