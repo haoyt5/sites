@@ -66,6 +66,22 @@
       "id": "moneytracker"
     },
     {
+      "name": "Voice Simulation Service",
+      "demo": "https://www.loom.com/share/3a2f3e1f7a4d4706a4519a0aa577ce79",
+      "code": null,
+      "title": "Autism Website - Voice Simulation",
+      "description": "Voice Simulation Service is a component of the Autism Website that aims to enhance the reading and storytelling experience for children with Autism Spectrum Disorder (ASD). The service provides features such as story creation and updates, as well as story reading in different voices with support for volume control, play speed adjustment, and tone changing. It is built using Node.js, React, and Firebase - Cloud Firestore, with integration with murf.ai.",
+      "id": "vosim"
+    },
+    {
+      "name": "Data Collection",
+      "demo": "https://youtu.be/RcL376YKyXo",
+      "code": "https://github.com/haoyt5/browser-security-sv1",
+      "title": "Timing-Based Browsing Vulnerable via Site Isolation",
+      "description": "Timing-Based Attack Data Collection utilizes HTML, CSS, JavaScript, Python, and Selenium to conduct end-to-end web scraping. The purpose is to collect the loading time of 300 URLs for three different scenarios: Not-Present (NP), Foreground (FG), and Background (BG).",
+      "id": "timebased"
+    },
+    {
       "name": "CMUSV One",
       "demo": "https://youtu.be/VYamod-SMXc",
       "code": null,

@@ -45,7 +45,11 @@ const ProjectCard = ({ name, demo, code, title, description, id }) => (
         borderRadius: "15px",
       }}
     >
-      <img src={`/assets/img/${id}_pv.png`} alt={`${id} project screenshot`} />
+      <img
+        src={`/assets/img/${id}_pv.png`}
+        alt={`${id} project screenshot`}
+        loading="lazy"
+      />
     </div>
     <h5 className="m-0 py-3">{title}</h5>
     <p>{description}</p>
@@ -68,7 +72,7 @@ function Projects({ data }) {
       <Row>
         {projects &&
           projects.map((item) => (
-            <Col key={item.id} className="col-lg-6 px-4 col-md-12">
+            <Col key={item.id} className="col-xl-4 col-lg-6 px-4 col-md-12">
               <ProjectCard {...item} />
             </Col>
           ))}
