@@ -2,11 +2,13 @@ import React, { lazy, Suspense } from "react";
 import { Row, Col } from "reactstrap";
 import PropTypes from "prop-types";
 import { RoundBlockLink } from "../../components/layout/Typography";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Profile = lazy(() => import("./Profile"));
 
 const TextLink = ({ title, ...props }) => (
-  <a className="text-success link-line" target="_blank" {...props}>
-    <b>{title}</b>
+  <a className="text-link text-primary" target="_blank" {...props}>
+    {title}
   </a>
 );
 
@@ -37,17 +39,18 @@ function Jumbotron() {
           className="text-dark text-introduction p-0"
         >
           <h1>
-            <strong>Hello I am Karen Tu </strong>
+            <strong>Karen Tu </strong>
           </h1>
           <h3 className="mb-3">
-            <strong>Software Engineer @ Mountain View, CA</strong>
+            <strong>Software Engineer @ Bay Area, CA</strong>
           </h3>
           <div>
-            I just graduated from Carnegie Mellon University . Previously, I
-            interned at Johnson Controls at the cloud team at 22 summer and
-            Trend Micro at the licensing team for two years focusing on full
-            stack development building platforms for NABU and EU sales teams and
-            thousands of our business customers using React and Redux.
+            I am a software engineer with 2.5 years of professional experience
+            in web development, specializing in JavaScript, Express, and React.
+            I recently graduated from Carnegie Mellon University in 2023 with an
+            MS in Software Engineering. Prior to that, I interned at Johnson
+            Controls on the cloud team during the summer of 2022 and worked at
+            Trend Micro for two years on the licensing team.
           </div>
           <br />
           <div>
@@ -58,7 +61,7 @@ function Jumbotron() {
               href="/#contact"
               style={{ backgroundColor: "#6CA981" }}
             />{" "}
-            at karenhaoyitu@gmail.com or haoyit@andrew.cmu.edu.
+            at <code>karenhaoyitu@gmail.com</code>
           </div>
           <br />
           <div>
@@ -68,13 +71,19 @@ function Jumbotron() {
               style={{ backgroundColor: "#82ABCA" }}
               href="/#experience"
             />{" "}
-            and{" "}
+            ,{" "}
             <RoundBlockLink
               style={{ backgroundColor: "#B782CA" }}
               text="projects"
               href="/#project"
+            />{" "}
+            and check out my <FontAwesomeIcon icon={faGithub} />{" "}
+            <TextLink title="Github" href="https://github.com/haoyt5" /> and{" "}
+            <FontAwesomeIcon icon={faLinkedin} />{" "}
+            <TextLink
+              title="LinkedIn"
+              href="https://www.linkedin.com/in/karenhytu/"
             />
-            ! 🚀
           </div>
         </Col>
       </Row>
