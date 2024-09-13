@@ -29,6 +29,15 @@
   ],
   "professional": [
     {
+      "company": "ByteDance Inc.",
+      "id": "byteDance",
+      "company_link": "https://www.bytedance.com",
+      "title": "Full Stack Software Engineer",
+      "sub_title": "Security Information and Event Management (SIEM) System",
+      "start_date": "2023-09",
+      "end_date": "Present"
+    },
+    {
       "company": "Johnson Controls Inc.",
       "id": "jci",
       "company_link": "https://www.johnsoncontrols.com/",

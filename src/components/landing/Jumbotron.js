@@ -45,9 +45,9 @@ function Jumbotron() {
             <strong>Software Engineer @ Bay Area, CA</strong>
           </h3>
           <div>
-            I am a software engineer with 2.5 years of professional experience
-            in web development, specializing in JavaScript, Express, and React.
-            I recently graduated from Carnegie Mellon University in 2023 with an
+            I am a software engineer with 3 years of professional experience in
+            web development, specializing in JavaScript, Express, and React. I
+            recently graduated from Carnegie Mellon University in 2023 with an
             MS in Software Engineering. Prior to that, I interned at Johnson
             Controls on the cloud team during the summer of 2022 and worked at
             Trend Micro for two years on the licensing team.
