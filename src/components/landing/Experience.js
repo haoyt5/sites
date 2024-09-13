@@ -61,7 +61,18 @@ function Experience({ data }) {
       <Row>
         <h5>Professional 💻</h5>
         {professional &&
-          professional.map((item) => <JobBlock key={item.id} item={item} />)}
+          professional.map((item, index) => {
+            if (index === 0 || index === 2)
+              return <JobBlock key={item.id} item={item} />;
+          })}
+      </Row>
+      <Row>
+        <h5>Internship 🐣</h5>
+        {professional &&
+          professional.map((item, index) => {
+            if (index === 1 || index === 3)
+              return <JobBlock key={item.id} item={item} />;
+          })}
       </Row>
       <Row>
         <h5>Education 📚</h5>

@@ -4,6 +4,17 @@ import { TextLink } from "../layout/Typography";
 
 const JobDescription = (id) => {
   switch (id) {
+    case "byteDance":
+      return (
+        <>
+          <p className="m-0">
+            I am working as a full-stack software engineer using TypeScript,
+            React, GraphQL, RPC and Go to design and implement scalable modules
+            on SIEM platform to help globals security teams on managing security
+            incidents and threat detection and response (TDR).
+          </p>
+        </>
+      );
     case "jci":
       return (
         <div>
