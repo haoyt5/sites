@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksites=self.webpackChunksites||[]).push([[380],{380:(s,e,a)=>{a.r(e),a.d(e,{default:()=>t});a(43);var i=a(579);const t=function(){return(0,i.jsx)("div",{className:"shadow-sm",style:{width:"200px"},children:(0,i.jsx)("img",{src:"/assets/img/karen_profile.png",className:"img-fluid rounded",alt:"..."})})}}}]);
+//# sourceMappingURL=380.e2e847e0.chunk.js.map
