@@ -45,17 +45,20 @@ function Jumbotron() {
             <strong>Software Engineer @ Bay Area, CA</strong>
           </h3>
           <div>
-            I am a software engineer with 3 years of professional experience in
-            web development, specializing in JavaScript, Express, and React. I
-            recently graduated from Carnegie Mellon University in 2023 with an
-            MS in Software Engineering. Prior to that, I interned at Johnson
-            Controls on the cloud team during the summer of 2022 and worked at
-            Trend Micro for two years on the licensing team.
+            I am a full-stack software engineer with over 4 years of experience
+            building scalable web applications and distributed web services,
+            specializing in TypeScript, React, Node/Go, and modern front-end
+            architecture. I graduated from Carnegie Mellon University with an MS
+            in Software Engineering in 2023. My experience includes delivering
+            global security workflow features at ByteDance, developing
+            enterprise-scale licensing and analytics systems at Trend Micro, and
+            building a smart-home app store during my internship at Johnson
+            Controls.
           </div>
           <br />
           <div>
-            🎐 I am currently seeking for a full-time software development
-            engineer position. If you think I am a good fit, please{" "}
+            🎐 I am currently seeking a full-time software engineering role. If
+            you think I may be a good fit, please contact me{" "}
             <RoundBlockLink
               text="contact me"
               href="/#contact"
@@ -65,13 +68,13 @@ function Jumbotron() {
           </div>
           <br />
           <div>
-            Feel free to read about my professional{" "}
+            Feel free to explore my professional{" "}
             <RoundBlockLink
               text="experience"
               style={{ backgroundColor: "#82ABCA" }}
               href="/#experience"
             />{" "}
-            ,{" "}
+            , browse my {" "}
             <RoundBlockLink
               style={{ backgroundColor: "#B782CA" }}
               text="projects"
