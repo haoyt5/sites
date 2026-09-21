@@ -45,7 +45,7 @@ function Jumbotron() {
             <strong>Software Engineer @ Bay Area, CA</strong>
           </h3>
           <div>
-            I am a full-stack software engineer with over 4 years of experience
+            I am a full-stack software engineer with over 5 years of experience
             building scalable web applications and distributed web services,
             specializing in TypeScript, React, Node/Go, and modern front-end
             architecture. I graduated from Carnegie Mellon University with an MS
@@ -74,7 +74,7 @@ function Jumbotron() {
               style={{ backgroundColor: "#82ABCA" }}
               href="/#experience"
             />{" "}
-            , browse my {" "}
+            , browse my{" "}
             <RoundBlockLink
               style={{ backgroundColor: "#B782CA" }}
               text="projects"
